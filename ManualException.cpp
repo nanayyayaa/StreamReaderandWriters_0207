@@ -12,4 +12,13 @@ int main()
     }
     //kondisi jika throw yang bertipe data integer
     catch (int a)
+    {
+        cout << "Pengecualian akan di eksekusi" << endl;
+    }
+    //kondisi jika throw bertipe data selain integer
+    catch (...)
+    {
+        cout << "default pengecualian dieksekusi" << endl;
+    }
+    return 0;
 }
